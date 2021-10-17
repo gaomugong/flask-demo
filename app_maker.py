@@ -74,8 +74,8 @@ def register_blueprints(app, pkg='blueprints'):
         try:
             mod = import_string(name)
             if hasattr(mod, 'bp'):
-                print('[{}] register blueprints: {}'.format(name, mod.bp.url_prefix))
                 app.register_blueprint(mod.bp)
+                print('[{}] register blueprints success: {}'.format(name, mod.bp.url_prefix))
         except Exception as e:
             print('[{}] register api/blueprints: {}'.format(name, e))
     return None

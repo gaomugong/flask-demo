@@ -9,8 +9,8 @@ from flask import (
     flash, current_app, make_response
 )
 from flask_restful import reqparse, abort, Resource, Api
-
-bp = Blueprint(__name__, __name__, url_prefix='/api')
+name = 'api_v1'
+bp = Blueprint(name, __name__, url_prefix='/api')
 api = Api(prefix='/v1', app=bp)
 
 TODOS = {
