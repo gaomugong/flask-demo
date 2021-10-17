@@ -74,10 +74,10 @@ def register_blueprints(app, pkg='blueprints'):
         try:
             mod = import_string(name)
             if hasattr(mod, 'bp'):
-                print '[{}] register blueprints: {}'.format(name, mod.bp.url_prefix)
+                print('[{}] register blueprints: {}'.format(name, mod.bp.url_prefix))
                 app.register_blueprint(mod.bp)
         except Exception as e:
-            print '[{}] register api/blueprints: {}'.format(name, e)
+            print('[{}] register api/blueprints: {}'.format(name, e))
     return None
 
 
@@ -89,7 +89,7 @@ def register_commands(app, pkg='commands'):
             if hasattr(mod, 'command'):
                 app.cli.add_command(mod.command, name=name.split('.')[1])
         except Exception as e:
-            print '[{}] register cmd: {}'.format(name, e)
+            print('[{}] register cmd: {}'.format(name, e))
 
     return None
 

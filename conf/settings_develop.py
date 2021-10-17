@@ -13,6 +13,6 @@ DATABASES = {
         'PORT': 3306,
         'NAME': 'flask',
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': '88888888',
     },
 }

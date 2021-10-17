@@ -39,7 +39,7 @@ def post(post_id):
 @bp.route('/cookies/', methods=['GET', 'POST'])
 def cookies():
     str = ''
-    for k, v in request.cookies.iteritems():
+    for k, v in request.cookies.items():
         str += '%s: %s | ' % (k, v)
     resp = make_response('cookies: \n%s' % str)
 

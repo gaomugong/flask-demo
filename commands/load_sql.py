@@ -10,7 +10,7 @@ from common.database import db
               help='Sql File To Load (ex. /static/image.png)')
 def command(file):
     """initial the database."""
-    print file
+    print(file)
     # with open(file, 'r') as schema:
     #     connection = db.engine.raw_connection()
     #     try:

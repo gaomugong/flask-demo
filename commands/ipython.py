@@ -34,8 +34,8 @@ Db: %s''' % (
     shell_name_space = app.make_shell_context()
 
     try:
-        import IPython
-        from IPython.terminal.ipapp import load_default_config
+        from . import IPython
+        from .IPython.terminal.ipapp import load_default_config
         config = load_default_config()
         config.TerminalInteractiveShell.banner1 = banner1
         IPython.embed(

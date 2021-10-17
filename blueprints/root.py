@@ -22,8 +22,8 @@ bp = Blueprint('root', __name__)
 
 @cache.cached(timeout=50, key_prefix='all_comments')
 def get_all_comments():
-    print 'get_all_comments'
-    comments = range(1000)
+    print('get_all_comments')
+    comments = list(range(1000))
     return comments
 
 

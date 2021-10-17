@@ -17,9 +17,9 @@ class Addres(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     email_address = db.Column(db.String(80))
-    user_id = db.Column(db.ForeignKey(u'user.id'), index=True)
+    user_id = db.Column(db.ForeignKey('user.id'), index=True)
 
-    user = db.relationship(u'User', primaryjoin='Addres.user_id == User.id', backref=u'address')
+    user = db.relationship('User', primaryjoin='Addres.user_id == User.id', backref='address')
 
 
 class Category(db.Model):
@@ -36,9 +36,9 @@ class Post(db.Model):
     title = db.Column(db.String(80))
     body = db.Column(db.Text)
     pub_date = db.Column(db.DateTime)
-    category_id = db.Column(db.ForeignKey(u'category.id'), index=True)
+    category_id = db.Column(db.ForeignKey('category.id'), index=True)
 
-    category = db.relationship(u'Category', primaryjoin='Post.category_id == Category.id', backref=u'posts')
+    category = db.relationship('Category', primaryjoin='Post.category_id == Category.id', backref='posts')
 
 
 class Todo(db.Model):

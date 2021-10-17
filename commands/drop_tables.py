@@ -11,5 +11,5 @@ from common.database import db
 def command():
     """drop tables."""
 
-    print '[%s]: <reset db>' % current_app
+    print('[%s]: <reset db>' % current_app)
     db.drop_all()

@@ -1,49 +1,49 @@
 # -*- coding: utf-8 -*-
 
 # Flask
-Flask==0.12.2
-MarkupSafe==1.0
-Werkzeug==0.13
-Jinja2==2.10
-itsdangerous==0.24
-click>=5.0
+Flask
+Flask-Cors
+Flask-SocketIO
+MarkupSafe==2.0.1
+Werkzeug
 
 # Database
-Flask-SQLAlchemy==2.3.2
-psycopg2==2.7.3.2
-SQLAlchemy==1.1.15
-PyMySQL==0.6.7
+Flask-SQLAlchemy
+psycopg2
+SQLAlchemy
+PyMySQL
 
 # Migrations
-Flask-Migrate==2.1.1
+Flask-Migrate
 
 # Forms
-Flask-WTF==0.14.2
-WTForms==2.1
+Flask-WTF
+WTForms[email]
 
 # Deployment
-gunicorn>=19.1.1
+# gunicorn>=19.1.1
 
 # Webpack
-flask-webpack==0.1.0
+flask-webpack
 
 # Auth
-Flask-Login==0.4.1
-Flask-Bcrypt==0.7.1
+Flask-Login
+Flask-Bcrypt
 
 # Caching
-Flask-Caching>=1.0.0
+Flask-Caching
 
 # Debug toolbar
-Flask-DebugToolbar==0.10.1
+Flask-DebugToolbar
 
 # Flask Admin 
-Flask-Admin==1.5.0
+Flask-Admin
 
 # Flask Restful
-Flask-Restful==0.3.6
+Flask-Restful
 
 # celery
-celery==3.1.18
-Flask-Celery-Helper==1.1.0
+celery==3.1.25
+Flask-Celery-Helper
 redis==2.10.6
+anyjson==0.3.3
